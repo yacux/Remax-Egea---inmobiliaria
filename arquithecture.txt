@@ -1,0 +1,41 @@
+src/
+│
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx                # Página principal (home)
+│   ├── venta/
+│   │   └── page.tsx
+│   ├── alquiler/
+│   │   └── page.tsx
+│   └── contacto/
+│       └── page.tsx
+│
+├── core/
+│   ├── domain/                  # Lógica del dominio (entidades, reglas de negocio)
+│   ├── infrastructure/          # Comunicación con APIs, bases de datos, servicios externos
+│   └── application/             # Casos de uso, orquestación de lógica
+│
+└── presentation/
+    ├── components/
+    │   ├── atoms/               # Elementos básicos (botones, inputs, etiquetas, iconos)
+    │   │   ├── Button.tsx
+    │   │   ├── Input.tsx
+    │   │   └── Heading.tsx
+    │   │
+    │   ├── molecules/           # Combinación de átomos (formulario de búsqueda, tarjeta de propiedad)
+    │   │   ├── PropertyCard.tsx
+    │   │   ├── SearchForm.tsx
+    │   │   └── NavLinks.tsx
+    │   │
+    │   ├── organisms/           # Secciones completas (header, footer, slider de propiedades)
+    │   │   ├── Header.tsx
+    │   │   ├── Footer.tsx
+    │   │   └── PropertyList.tsx
+    │   │
+    │   └── templates/           # Layouts de páginas (estructura general)
+    │       ├── MainLayout.tsx
+    │       └── PropertyLayout.tsx
+    │
+    │       
+    │
+    └── styles/                   # Archivos CSS/Tailwind config si lo manejas aquí
